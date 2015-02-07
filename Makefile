@@ -1,5 +1,5 @@
-CC=~/c/rpi/tools/arm-bcm2708/arm-bcm2708hardfp-linux-gnueabi/bin/arm-bcm2708hardfp-linux-gnueabi-gcc
-
+# For cross-compilation, set this to point to your arch-specific gcc binary
+CC=gcc
 PROGRAM_NAME=dht22
 
 all:
