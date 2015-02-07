@@ -1,8 +1,10 @@
 CC=~/c/rpi/tools/arm-bcm2708/arm-bcm2708hardfp-linux-gnueabi/bin/arm-bcm2708hardfp-linux-gnueabi-gcc
 
+PROGRAM_NAME=dht22
+
 all:
-	${CC} --std=gnu99 *.c -lrt -o dht22
+	${CC} --std=gnu99 -DPROGRAM_NAME=${PROGRAM_NAME} *.c -lrt -o dht22
 
 .PHONY: clean
 clean:
-	rm dht22
+	rm ${PROGRAM_NAME}

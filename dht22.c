@@ -14,7 +14,7 @@ static int print_temp;
 static int print_hum;
 
 void usage() {
-	printf("Usage: ./dht22 [-h|--help] [-t|--temperature] [-u|--humidity]\n");
+	printf("Usage: ./PROGRAM_NAME [-h|--help] [-t|--temperature] [-u|--humidity]\n");
 }
 
 void parse_args(int argc, char *argv[]) {
