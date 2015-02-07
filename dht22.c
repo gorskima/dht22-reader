@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
 		printf("%f\n", h);
 	else {
 		printf("Temperature: %.1f *C\n", t);
-		printf("Humidity: %.1f %\n", h);
+		printf("Humidity: %.1f %%\n", h);
 	}
 
 	return EXIT_SUCCESS;
