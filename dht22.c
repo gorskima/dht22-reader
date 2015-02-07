@@ -44,12 +44,11 @@ void parse_args(int argc, char *argv[]) {
 int main(int argc, char *argv[]) {
 	parse_args(argc, argv);
 
-        float h, t;
-	
-        if (pi_dht_read(DHT22, 17, &h, &t)) {
-                fprintf(stderr, "Failed to read from the sensor\n");
-                return -1;
-        }
+	float h, t;
+	if (pi_dht_read(DHT22, 17, &h, &t)) {
+		fprintf(stderr, "Failed to read from the sensor\n");
+		return -1;
+	}
 
 	if (print_temp)
 		printf("%f\n", t);
